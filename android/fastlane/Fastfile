@@ -14,8 +14,8 @@ desc "Deploy to closed beta track"
 lane :test_beta do
     build_android_app(task: "assembleRelease")
     firebase_app_distribution(
-      app: ENV['1:872706339250:android:e0e5b63c2ab40975c2f4ab'],
-      firebase_cli_token: ENV['1//0gkD2kKW1kQXFCgYIARAAGBASNwF-L9IrYxVtlaLm-5NUY2vSdD-ycHu9_HtOCr4rcXsSAQVbpcWBm7fkHi_P0zsX58JsI3qHb0I'],
+      app: '1:872706339250:android:e0e5b63c2ab40975c2f4ab',
+      firebase_cli_token: '1//0gkD2kKW1kQXFCgYIARAAGBASNwF-L9IrYxVtlaLm-5NUY2vSdD-ycHu9_HtOCr4rcXsSAQVbpcWBm7fkHi_P0zsX58JsI3qHb0I',
       testers: "er.yugam@gmail.com",
       groups: "Test Demo Group1",
       release_notes: "RELEASE-NOTE",

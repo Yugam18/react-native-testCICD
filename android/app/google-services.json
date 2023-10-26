@@ -42,6 +42,25 @@
           "other_platform_oauth_client": []
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872706339250:android:e0e5b63c2ab40975c2f4ab",
+        "android_client_info": {
+          "package_name": "com.testprojectnative"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRS2NonkFiRPUmQHGQksQXn3KUrvr9xOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
     }
   ],
   "configuration_version": "1"

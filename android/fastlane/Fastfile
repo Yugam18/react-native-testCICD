@@ -1,18 +1,3 @@
-# This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
-#
-# For a list of all available actions, check out
-#
-#     https://docs.fastlane.tools/actions
-#
-# For a list of all available plugins, check out
-#
-#     https://docs.fastlane.tools/plugins/available-plugins
-#
-
-# Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
-
 default_platform(:android)
 
 platform :android do
@@ -20,19 +5,21 @@ platform :android do
   lane :test do
     gradle(task: "test")
   end
-
-  desc "Submit a new Beta Build to Crashlytics Beta"
-  lane :beta do
-    gradle(task: "clean assembleRelease")
-    crashlytics
-  
-    # sh "your_script.sh"
-    # You can also use other beta testing services here
+   desc "Submit a new Beta Build to Firebase"
+    lane :beta do
+      gradle(task: "assembleDebug")
+    end
   end
-
-  desc "Deploy a new version to the Google Play"
-  lane :deploy do
-    gradle(task: "clean assembleRelease")
-    upload_to_play_store
-  end
+desc "Deploy to closed beta track"
+lane :test_beta do
+    build_android_app(task: "assembleRelease")
+    firebase_app_distribution(
+      app: ENV['1:872706339250:android:4a3af44a12cefaa0c2f4ab'],
+      firebase_cli_token: ENV['1//0gkD2kKW1kQXFCgYIARAAGBASNwF-L9IrYxVtlaLm-5NUY2vSdD-ycHu9_HtOCr4rcXsSAQVbpcWBm7fkHi_P0zsX58JsI3qHb0I'],
+      testers: "er.yugam@gmail.com",
+      groups: "Test Demo Group1",
+      release_notes: "RELEASE-NOTE",
+      apk_path: "../build/outputs/apk/release/app-release.apk"
+    )
 end
+ 

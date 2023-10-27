@@ -12,32 +12,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: set up JDK 11
-      uses: actions/setup-java@v3
-      with:
-        java-version: '11'
-        distribution: 'temurin'
-        cache: gradle
-    - name: Grant execute permission for gradlew
-      run: |
-        cd android
-        chmod +x gradlew
+      - uses: actions/checkout@v3
+      - name: set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+          cache: gradle
+      - name: Grant execute permission for gradlew
+        run: |
+          cd android
+          chmod +x gradlew
 
-    - run: sudo npm install
-    - run: sudo npm i expo-constants@14.5
-    - name: Build with Gradle
-      run: |
-        cd android
-        sudo ./gradlew build
-    - run: |
-           cd /var/lib
-           sudo chmod -R a+w gems/
-           gem install bundler
-           gem install fastlane
-    - name: Run Fastlane
-      run: |
-           sudo chmod -R 777 *
-           cd android
-           bundle install
-           bundle exec fastlane test_beta
+      - run: sudo npm install
+      - run: sudo npm i expo-constants@14.5
+      - name: Build with Gradle
+        run: |
+          cd android
+          sudo ./gradlew build
+      - run: |
+          cd /var/lib
+          sudo chmod -R a+w gems/
+          gem install bundler
+          gem install fastlane
+      - name: Run Fastlane
+        run: |
+          sudo chmod -R 777 *
+          cd android
+          bundle install
+          sudo bundle exec fastlane test_beta

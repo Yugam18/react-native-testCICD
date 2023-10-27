@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "testreactnativeapp-403307",
+  "private_key_id": "b968972d400722259b9408850422e7e3709f5771",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCSQvkjB3ErMNiA\nUXnBtOGWYJcDi4UeX1cSgvp0pO+8duD2evC7vXDLwyp6poxzhVtpmqw7wztSBwL0\n1FuUwEdVw+zoTZXUTZwOowR4vkxhShLaqAWgFwsnTzcwlgNfRLt9q1HMpwPRZBnu\n176581kgwRZbpRrot5OLnnaXoBzAcriNIa+bK6xRhPG1CFGb5tRiTr7CGBBAutiR\nieX3oE5C06oaWlcVuey5E9HYZGxQ86z0RyE2K/4sphx7OvcCmyrXwLawOUL6jDN7\nT79wE099tD29ddgQKVv0pMbx06TKDRa7eO7b7cVavaZstVvRLA0irQGgNXNoKdUA\nen1aZvZZAgMBAAECggEAOqWVLWkSBT4ISeehmTz0ya4AT6EVpxiWmusfDz+Fi33l\ndZ/VQIpVHLcspNJ8dePOxDkLf8koU5tRIae28x3oXKj7qShXADKAdVQDeoDfspEX\nn0qJOuiShdgbKqW0Q3KVdW4JFjUP8FmhlmY26Wv83Iff9a5t7EuT44OOTP0cGkQq\nsirjM9RfqneNY23jAXKoCjKEpIHSr119yOFFYzyP05b4xninmpd8JE9F3j8vI/e3\nLk6R7Wkv2kBrChkRPdm4g7yn6+HEC0XZClQouw0u/5hgU0TYcWNIbKSTFhl+UIQD\nurZDUcfLdisDb9fZTIB6ieuqD8vLrYSS4cXY7kqaqwKBgQDCxFMvUWIFVeHfd4Uk\nJYvDCR/SnKqs2vHzVOhkuwb2P6WQ62QMyaLimGwU+KwyQccpfG1WOxs1QRXloP3K\nvtuS7YWVeOVhsDCE08Y5FwR+tGz9mv2Px0Vw3q3kCZx1AmbIb0RBNJPyenU00FtJ\nOXftFgmuC8r6C9RJF7BKYWRvSwKBgQDAPrw4zj3MigakxZVQBeKRD1q+Ha2TPN4R\nW9VVX8lxftlwRBe86/i8Q2jx/Gxg0gflxILthT4A9KPbFGWAK+4Y5FmieZHyH7lj\n9lnwvG9SgCIZ1pRcbbKQM0rH0Xy2+L//Wk6e1gSTYl7TFrEGznRolTxP29geSo7L\nktIwthQWawKBgEVTGgTKo+ggRJCE+0f9cTzPn5sYlouGNv6Up09LXtQBnY3yqx7+\nGlMrS7U/OhN9ZEV4+3Xo/es7qm6cmhkzS/aFQroMWSEnVG3C71hcwAXVdMHkDALE\nPAxLxntXjG/9ldYb/KB09YAmZFeTHhr3MJ+b64AexHWyBjKqEt62wcf3AoGAXjti\nD4YojKXrc8DV24/G6svX8vChMFbZkzCsdViqaVOASaNW72fLWJzCSDsu9JZ/AIU+\nmCaDqfxAhRaOWjEuWE02Eon8m+4o9XK/y1zSRGJCVN/1gQjUShKaSS/KLfXoRsaB\nWyIUxBmn2Vh6FZgFP25HTe25Fb/+FpM1LGNTnVkCgYEAkPIDNi3a1vfjvHA33CIr\nFe/fsF9nfivO0XkKKplyZLtM5fBTOmdAPL5UTEywqQKrb7Vee2qobLaOvjtyvbo5\nbwzk5W1VmNsgJYYD5KFqgu/P4okrE0KaA1cMELLsZ61sd64m0VKr/Tgh0noKhxWF\nTlLtY3CXHflW2K4qYlUDoXw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "reactappcicd@testreactnativeapp-403307.iam.gserviceaccount.com",
+  "client_id": "111470465435157589300",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/reactappcicd%40testreactnativeapp-403307.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

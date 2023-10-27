@@ -1,6 +1,10 @@
 default_platform(:android)
 
 platform :android do
+  before_all do
+    ENV["FIREBASE_LOGIN_CREDENTIALS"] = "fastlane/testreactnativeapp-403307-b968972d4007.json"
+    ENV["FIREBASE_APP_ID"] = "1:872706339250:android:e0e5b63c2ab40975c2f4ab"
+  end
   desc "Runs all the tests"
   lane :test do
     gradle(task: "test")
@@ -12,14 +16,15 @@ platform :android do
   end
 desc "Deploy to closed beta track"
 lane :test_beta do
-    build_android_app(task: "assembleRelease")
+    gradle(task: "assembleDebug")
     firebase_app_distribution(
       app: '1:872706339250:android:e0e5b63c2ab40975c2f4ab',
       firebase_cli_token: '1//0gkD2kKW1kQXFCgYIARAAGBASNwF-L9IrYxVtlaLm-5NUY2vSdD-ycHu9_HtOCr4rcXsSAQVbpcWBm7fkHi_P0zsX58JsI3qHb0I',
       testers: "er.yugam@gmail.com",
-      groups: "Test Demo Group1",
       release_notes: "RELEASE-NOTE",
-      apk_path: "../build/outputs/apk/release/app-release.apk"
+      apk_path: "app/build/outputs/apk/debug/app-debug.apk",
+      groups_file: "fastlane/groups.txt",
+      service_credentials_file: ENV["FIREBASE_LOGIN_CREDENTIALS"]
     )
 end
  
